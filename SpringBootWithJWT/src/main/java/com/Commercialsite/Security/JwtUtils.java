@@ -19,7 +19,8 @@ public class JwtUtils {
   @Value("${bezkoder.app.jwtSecret}")
   private String jwtSecret;
 
-  @Value("${bezkoder.app.jwtExpirationMs}")//@value is used for mapping this attribute with application.properties file attribute
+  @Value("${bezkoder.app.jwtExpirationMs}")//@value is used for mapping this attribute 
+                                           //with application.properties file attribute
   private int jwtExpirationMs;
 
   public String generateJwtToken(Authentication authentication) {
