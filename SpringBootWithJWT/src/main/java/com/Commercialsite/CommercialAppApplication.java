@@ -12,7 +12,7 @@ public class CommercialAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CommercialAppApplication.class, args);
 		
-		System.out.println("my commercial web app is starting");
+		System.out.println("Our commercial web app is starting");
 	}
 
 }
