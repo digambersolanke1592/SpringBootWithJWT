@@ -5152,3 +5152,20 @@ org.eclipse.jgit.errors.TransportException: https://github.com/digambersolanke15
 
 !ENTRY org.eclipse.egit.ui 4 0 2023-04-26 12:50:53.173
 !MESSAGE Can't connect to any repository: https://github.com/digambersolanke1592/SpringBootWithJWT.git (https://github.com/digambersolanke1592/SpringBootWithJWT.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2023-04-26 12:51:13.880
+!MESSAGE An exception occurred during push on URI https://github.com/digambersolanke1592/SpringBootWithJWT.git: https://github.com/digambersolanke1592/SpringBootWithJWT.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/digambersolanke1592/SpringBootWithJWT.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1385)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:254)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-04-26 12:51:13.881
+!MESSAGE Can't connect to any repository: https://github.com/digambersolanke1592/SpringBootWithJWT.git (https://github.com/digambersolanke1592/SpringBootWithJWT.git: not authorized)
